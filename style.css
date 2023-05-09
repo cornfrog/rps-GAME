@@ -1,0 +1,58 @@
+@import url("keyframes.css");
+
+html, body{
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+}
+
+#menu-container{
+    animation-name: growMenu;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+#menu-img{
+    transform: scale(0.9);
+}
+
+#menu-options{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    inset: 0;
+}
+
+.menu-btn{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3.5rem;
+    min-width: 35%;
+    opacity: 0;
+    color: white;
+    background-color: rgb(130, 110, 0);
+    border-width: .5rem;
+    border-color: gold;
+    animation-name: playBtnPhaseIn;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.menu-btn:hover{
+    background-color: gold;
+    border-color: rgb(130, 110, 0);
+}

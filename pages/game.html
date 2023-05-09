@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/game-style.css">
+    <script src="../js/game.js"></script>
+    <title>GAME</title>
+</head>
+<body onload="pageInit()">
+    <div id="scorecard">
+        <div class="scorecard-label">        
+            <span class="wins-label">Wins:</span>
+            <input type="text" id="w-count" readonly value="0">
+        </div>
+        <button id="home-btn" onclick="location.href='../index.html'">MENU</button>
+        <div class="scorecard-label">        
+            <span class="wins-label">Loses:</span>
+            <input type="text" id="l-count" readonly value="0">
+        </div>
+    </div>
+    <div id="game-screen">
+        <div id="user-hand" class="sprite">
+            <img src="../imgs/rock.png" alt="" id="user-sprite">
+        </div>
+        <div id="cpu-hand" class="sprite">
+            <img src="../imgs/cpu-rock.png" alt="" id="cpu-sprite">
+        </div>
+    </div>
+    <div id="choice-menu">
+        <button class="choice" id="rock-btn">ROCK</button>
+        <button class="choice" id="paper-btn">PAPER</button>
+        <button class="choice" id="scissors-btn">SCISSORS</button>
+    </div>
+</body>
+</html>
